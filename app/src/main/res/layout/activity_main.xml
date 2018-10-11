@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/QuantView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:layout_margin="10dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/MinusButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:text="-"
+            android:layout_margin="10dp"
+            android:onClick="decreaseQuant"/>
+        <TextView
+            android:id="@+id/NumView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="30sp"
+            android:layout_margin="10dp"/>
+        <Button
+            android:id="@+id/PlusButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:text="+"
+            android:layout_margin="10dp"
+            android:onClick="increaseQuant"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/PriceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/CostView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0.00"
+        android:textSize="30sp"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/OrderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ORDER"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:onClick="completeOrder"/>
+    <TextView
+        android:id="@+id/HistView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"/>
+
+</LinearLayout>
